@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--header section-->
+
+    <header class="header-portfolio" role="banner" id="top">
+      <div class="row">
+        <nav class="nav" role="navigation">
+          <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="bio.html" class="nav__link">Bio</a>
+            </li>
+            <li class="nav__item">
+              <a href="portfolio.html" class="nav__link">Portfolio</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="elevatorpitch.html" class="nav__link">Elevator Pitch</a>
+            </li>
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Personal Dashboard</h3>
+              <p>A Chrome extension to help you focus and stay up-to-date.</p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a
+                  href="https://github.com/Gentlestan/personal-Dashboard"
+                  title="View Source Code"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/github.svg"
+                    class="work__code"
+                    alt="GitHub"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img
+                src="./images/dashboard-2.png"
+                class="work__image"
+                alt="Project 1"
+              />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Password Generator</h3>
+              <p>
+                the password generator is an app that constantly generates 15
+                character distinct password
+              </p>
+              <ul class="work__list">
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+                <li>React</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="#">
+                  <img
+                    src="./images/github.svg"
+                    class="work__code"
+                    title="View Source Code"
+                    alt="GitHub"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img
+                src="./images/password.jpg"
+                class="work__image"
+                alt="Project 1"
+              />
+            </div>
+          </div>
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Tenzies-App</h3>
+              <p>
+                Tenzies-App is a dice roll game. Roll until all the dice are the
+                same
+              </p>
+              <ul class="work__list">
+                <li>React</li>
+                <li>js</li>
+                <li>css</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="#">
+                  <img
+                    src="./images/github.svg"
+                    class="work__code"
+                    title="View Source Code"
+                    alt="GitHub"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img
+                src="./images/tenzie.png"
+                class="work__image"
+                alt="Project 3"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer role="contentinfo" class="footer">
+      <div class="row">
+        <!-- Update the links to point to your accounts -->
+        <ul class="footer__social-links">
+          <li class="footer__social-link-item">
+            <a
+              href="https://twitter.com/Gentlestan8"
+              title="Link to Twitter Profile"
+            >
+              <img
+                src="./images/twitter.svg"
+                class="footer__social-image"
+                alt="Twitter"
+              />
+            </a>
+          </li>
+          <li class="footer__social-link-item">
+            <a
+              href="https://github.com/Gentlestan/personal-Dashboard.git"
+              title="Link to Github Profile"
+            >
+              <img
+                src="./images/github.svg"
+                class="footer__social-image"
+                alt="Github"
+              />
+            </a>
+          </li>
+          <li class="footer__social-link-item">
+            <a href="#" title="Link to Codepen Profile">
+              <img
+                src="./images/codepen.svg"
+                class="footer__social-image"
+                alt="Codepen"
+              />
+            </a>
+          </li>
+          <li class="footer__social-link-item">
+            <a
+              href="https://www.linkedin.com/in/engr-ohazulike-stanley-97a3049a/"
+            >
+              <img
+                src="./images/linkedin.svg"
+                title="Link to Linkedin Profile"
+                class="footer__social-image"
+                alt="Linkedin"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <a href="#top" class="back-to-top" title="Back to Top">
+      <img
+        src="./images/arrow-up.svg"
+        alt="Back to Top"
+        class="back-to-top__image"
+      />
+    </a>
+    <script src="./index.js"></script>
+  </body>
+</html>

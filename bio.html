@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header" role="banner" id="top">
+      <div class="row">
+        <nav class="nav" role="navigation">
+          <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="bio.html" class="nav__link">Bio</a>
+          </li>
+
+            <li class="nav__item">
+              <a href="portfolio.html" class="nav__link">Portfolio</a>
+            </li>
+            <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> -->
+            <li class="nav__item">
+              <a href="elevatorpitch.html" class="nav__link">Elevator Pitch</a>
+            </li>
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__text-box row">
+        <div class="header__text">
+          <h1 class="heading-primary">
+            <!-- Replace the following name with your name -->
+            <span>Ohazulike Stanley</span>
+          </h1>
+          <!-- Put a small paragraph about yourself -->
+          <p>A Front-End Developer based in Abuja, Nigeria</p>
+          <a href="#contact" class="btn btn--pink">Get in touch</a>
+        </div>
+      </div>
+    </header>
+    <section class="about" id="about">
+        <div class="row">
+          <h2>About Me</h2>
+          <div class="about__content">
+            <div class="about__text">
+              <!-- Replace the below paragraph with info about yourself -->
+          <p>Hey, I’m Ohazulike Stanley, a Frontend Developer with a keen eye for building clean, responsive, and accessible web applications. I work mainly with React.js, JavaScript, Tailwind CSS, and HTML/CSS, turning designs into fully functional and user-friendly interfaces.
+
+            I have experience working with real-world projects, optimizing website performance, and ensuring a seamless user experience. I also enjoy collaborating in teams, using Git/GitHub, and troubleshooting issues to improve functionality.
+            
+            Currently, I’m diving into backend development with ALX Africa, expanding my skills to become a Full-Stack Developer. My goal is to build scalable applications that solve real problems.
+            
+            If you’d like to work together or just connect, feel free to reach out!</p>
+              <!-- Provide a link to your resume -->
+              <a href="https://docs.google.com/document/d/1_FNpa2mN0MmGzm8PDflmNFO5lIL8l8ABn0BMSjCCo6Q/edit?tab=t.0" class="btn">My Resume</a>
+            </div>
+    
+            <div class="about__photo-container">
+              <!-- Add a nice photo of yourself -->
+              <img class="about__photo" src="./images/stan.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+      <section class="contact" id="contact">
+        <div class="row">
+          <h2>Get in Touch</h2>
+          <div class="contact__info">
+            <p>
+              Are you looking for a fast-performing and user-friendly website to
+              represent your product or business? or looking for any kind of
+              consultation? or want to ask questions? or have some advice for me
+              or just want to say "Hi 👋" in any case feel free to Let me know. I
+              will do my best to respond back. 😊 The quickest way to reach out to
+              me is via an email.
+            </p>
+            <!-- Replace the email with yours -->
+            <a href="mailto:Sohazulike@gmail.com.com" class="btn">sohazulike@gmail.com</a>
+          </div>
+        </div>
+      </section>
+    
+      <footer role="contentinfo" class="footer">
+        <div class="row">
+          <!-- Update the links to point to your accounts -->
+          <ul class="footer__social-links">
+            <li class="footer__social-link-item">
+              <a href="https://twitter.com/Gentlestan8" title="Link to Twitter Profile">
+                <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
+              </a>
+            </li>
+            <li class="footer__social-link-item">
+              <a href="https://github.com/Gentlestan/personal-Dashboard.git" title="Link to Github Profile">
+                <img src="./images/github.svg" class="footer__social-image" alt="Github">
+              </a>
+            </li>
+            <li class="footer__social-link-item">
+              <a href="#" title="Link to Codepen Profile">
+                <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
+              </a>
+            </li>
+            <li class="footer__social-link-item">
+              <a href="https://www.linkedin.com/in/engr-ohazulike-stanley-97a3049a/">
+                <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+              </a>
+            </li>
+          </ul>
+    
+        </div>
+      </footer>
+    
+      <a href="#top" class="back-to-top" title="Back to Top">
+        <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+      </a>
+      <script src="./index.js"></script>
+  </body>
+</html>
