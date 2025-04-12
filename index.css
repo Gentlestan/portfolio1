@@ -34,10 +34,15 @@
   --line-height-normal: 1.7;
   --line-height-small: 1.2;
 
-  --black: #000;
-  --pink: #ff3258;
-  --white: #f0e9f2;
-  --white-1: #e5e5e6da;
+  --black-1: #000;
+  --pink-1: #ff3258;
+  --white-2: #f0e9f2;
+  --white-0: #e5e5e6da;
+
+  --black: #1f2937; /* or another chosen dark color */
+  --white: #ecfdf5; /* soft light background */
+  --white-1: #d1fae5; /* supporting lighter tone */
+  --pink: #10b981;
 
   --container-max-width: 1180px;
   --container-normal-width: 800px;
@@ -73,6 +78,10 @@ body {
   line-height: var(--line-height-normal);
   background: var(--black);
   overflow-x: hidden;
+}
+.contact .bio {
+  background: var(--black-1);
+  color: var(--white-0);
 }
 
 .row {
@@ -117,6 +126,13 @@ img {
 /* --------------------------------------- */
 /* ----- Headlines and Paragraphs ----- */
 /* --------------------------------------- */
+.contact,
+.bio,
+h1,
+h2,
+h3 {
+  color: var(--white-2);
+}
 
 h1,
 h2,
@@ -151,6 +167,9 @@ h2::after {
   width: 10rem;
   background: var(--pink);
   margin: var(--gutter-small) 0;
+}
+.contact .bio h2::after {
+  background: var(--pink-1);
 }
 
 h3 {
@@ -193,6 +212,12 @@ a {
   transition: all 0.2s;
   outline: 2px solid transparent;
 }
+.bio a {
+  color: var(--white-2);
+}
+.contact a {
+  color: var(--white-2);
+}
 
 ::-moz-focus-inner {
   border: 0;
@@ -202,6 +227,15 @@ button:focus,
 a:focus {
   outline: 2px solid var(--pink);
 }
+.contact .bio button:focus,
+a:focus {
+  outline: 2px solid var(--pink-1);
+}
+
+.contact button:focus,
+a:focus {
+  outline: 2px solid var(--pink-1);
+}
 
 body:not(.user-is-tabbing) button:focus,
 body:not(.user-is-tabbing) a:focus {
@@ -210,6 +244,14 @@ body:not(.user-is-tabbing) a:focus {
 
 .link:hover {
   color: var(--pink);
+}
+
+.bio .link:hover {
+  color: var(--pink-1);
+}
+
+.contact .link:hover {
+  color: var(--pink-1);
 }
 
 .btn {
@@ -239,10 +281,28 @@ body:not(.user-is-tabbing) a:focus {
   transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
+.contact .bio .btn::after {
+  background: var(--white-2);
+}
+
+.contact .btn::after {
+  background: var(--white-2);
+}
+
 .btn:hover::after,
 .btn:focus::after {
   right: 0;
   background: var(--pink);
+}
+
+.contact .bio .btn:hover::after,
+.contact .bio .btn:focus::after {
+  background: var(--pink-1);
+}
+
+.contact .btn:hover::after,
+.contact .btn:focus::after {
+  background: var(--pink-1);
 }
 
 .btn--pink {
@@ -250,8 +310,22 @@ body:not(.user-is-tabbing) a:focus {
   transition: all 0.2s;
 }
 
+.bio .btn--pink {
+  background: var(--pink-1);
+}
+.contact .btn--pink {
+  background: var(--pink-1);
+}
+
 .btn--pink::after {
   display: none;
+}
+.bio .bio-text {
+  margin-top: 30px;
+}
+
+.contact .bio-text {
+  margin-top: 30px;
 }
 
 .btn--pink:hover,
@@ -268,6 +342,14 @@ body:not(.user-is-tabbing) a:focus {
   border-bottom: 1px solid var(--pink);
 }
 
+.bio .link__text {
+  border-bottom: 1px solid var(--pink-1);
+}
+
+.contact .link__text {
+  border-bottom: 1px solid var(--pink-1);
+}
+
 .link__text::after {
   content: "";
   display: block;
@@ -281,6 +363,14 @@ body:not(.user-is-tabbing) a:focus {
   transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
+.bio .link__text::after {
+  background: var(--white-2);
+}
+
+.contact .link__text::after {
+  background: var(--white-2);
+}
+
 .link__text:focus {
   outline: none;
 }
@@ -289,6 +379,16 @@ body:not(.user-is-tabbing) a:focus {
 .link__text:focus:after {
   right: 0;
   background: var(--pink);
+}
+
+.bio .link__text:hover::after,
+.bio .link__text:focus:after {
+  background: var(--pink-1);
+}
+
+.contact .link__text:hover::after,
+.contact .link__text:focus:after {
+  background: var(--pink-1);
 }
 
 .link__text span {
@@ -312,6 +412,13 @@ body:not(.user-is-tabbing) a:focus {
   z-index: 10;
   visibility: hidden;
   transition: all 0.4s;
+}
+.bio .back-to-top {
+  background-color: var(--pink-1);
+}
+
+.contact .back-to-top {
+  background-color: var(--pink-1);
 }
 
 .back-to-top__image {
@@ -387,15 +494,36 @@ body:not(.user-is-tabbing) a:focus {
   background: var(--white);
   transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
+.bio .nav__link::after {
+  background: var(--white-2);
+}
+
+.contact .nav__link::after {
+  background: var(--white-2);
+}
 
 .nav__link:hover {
   color: var(--pink);
+}
+.bio .nav__link:hover {
+  color: var(--pink-1);
+}
+
+.contact .nav__link:hover {
+  color: var(--pink-1);
 }
 
 .nav__link:hover::after {
   right: 0;
   height: 2px;
   background: var(--pink);
+}
+.bio .nav__link:hover::after {
+  background: var(--pink-1);
+}
+
+.contact .nav__link:hover::after {
+  background: var(--pink-1);
 }
 
 /* --------------------------------------- */
@@ -427,6 +555,17 @@ body:not(.user-is-tabbing) a:focus {
   max-width: var(--container-medium-width);
   font-family: "Jost", sans-serif;
   font-size: var(--font-size-medium);
+}
+
+.tech-stack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+.tech-header {
+  margin-right: 30px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 500px) {
@@ -461,6 +600,12 @@ body:not(.user-is-tabbing) a:focus {
     background: var(--white);
     margin: 5px;
     transition: all 0.3s;
+  }
+  .bio .hamburger div {
+    background: var(--white-2);
+  }
+  .contact .hamburger div {
+    background: var(--white-2);
   }
 
   .hamburger {
@@ -580,7 +725,14 @@ body:not(.user-is-tabbing) a:focus {
   flex-direction: row-reverse;
   align-items: center;
 }
+.bio .about__photo-container {
+  height: 80vh;
+}
 
+.bio,
+.row {
+  margin-top: 0;
+}
 @media (max-width: 900px) {
   .about__content {
     flex-direction: column-reverse;

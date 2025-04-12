@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
+    <title>Ohazulike Stanley | Bio</title>
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
   </head>
-  <body>
+  <body class="bio">
     <header class="header" role="banner" id="top">
       <div class="row">
         <nav class="nav" role="navigation">
@@ -27,9 +31,7 @@
               <a href="portfolio.html" class="nav__link">Portfolio</a>
             </li>
             <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> -->
-            <li class="nav__item">
-              <a href="elevatorpitch.html" class="nav__link">Elevator Pitch</a>
-            </li>
+            
             <li class="nav__item">
               <a href="contact.html" class="nav__link">Contact</a>
             </li>
@@ -38,41 +40,78 @@
       </div>
       <div class="header__text-box row">
         <div class="header__text">
-          <h1 class="heading-primary">
-            <!-- Replace the following name with your name -->
-            <span>Ohazulike Stanley</span>
-          </h1>
+          
           <!-- Put a small paragraph about yourself -->
-          <p>A Front-End Developer based in Abuja, Nigeria</p>
+          <p class="bio-text">Ex-engineer turned problem-solver with a passion for building user-friendly web apps using React, TypeScript & Tailwind. I love breaking things just to fix them better.</p>
           <a href="#contact" class="btn btn--pink">Get in touch</a>
         </div>
       </div>
     </header>
     <section class="about" id="about">
         <div class="row">
-          <h2>About Me</h2>
+          <h2>Elevator Pitch</h2>
           <div class="about__content">
             <div class="about__text">
               <!-- Replace the below paragraph with info about yourself -->
-          <p>Hey, I’m Ohazulike Stanley, a Frontend Developer with a keen eye for building clean, responsive, and accessible web applications. I work mainly with React.js, JavaScript, Tailwind CSS, and HTML/CSS, turning designs into fully functional and user-friendly interfaces.
-
-            I have experience working with real-world projects, optimizing website performance, and ensuring a seamless user experience. I also enjoy collaborating in teams, using Git/GitHub, and troubleshooting issues to improve functionality.
-            
-            Currently, I’m diving into backend development with ALX Africa, expanding my skills to become a Full-Stack Developer. My goal is to build scalable applications that solve real problems.
-            
-            If you’d like to work together or just connect, feel free to reach out!</p>
+              <h3>Tech Stack</h3>
+              <div class="tech-icons">
+                <div class="tech-stack">
+                  <h4 class="tech-header">HTML5</h4>
+                  <i class="fab fa-html5" title="HTML5"></i>
+                </div>
+                <div class="tech-stack">
+                  <h4 class="tech-header">CSS3</h4>
+                  <i class="fab fa-css3-alt" title="CSS3"></i>
+                </div>
+                <div class="tech-stack">
+                  <h4 class="tech-header">JavaScript</h4>
+                  <i class="fab fa-js" title="JavaScript"></i>
+                </div>
+                <div class="tech-stack">
+                  <h4 class="tech-header">React</h4>
+                  <i class="fab fa-react" title="React.js"></i>
+                </div>
+                <div class="tech-stack">
+                  <h4 class="tech-header">Github</h4>
+                  <i class="fab fa-github" title="GitHub"></i>
+                </div>
+                <div class="tech-stack">
+                  <h4 class="tech-header">Vs Code</h4>
+                    <i class="fas fa-code" title="VS Code"></i>
+                  </h4>
+                </div>
+                <div class="tech-stack">
+                  <h4 class="tech-header">Netlify</h4>
+                  <i class="fas fa-cloud-upload-alt" title="Netlify"></i>
+                </div>
+                <div class="tech-stack">
+                  <h4 class="tech-header">Vercel</h4>
+                  <i class="fas fa-server" title="Vercel"></i>
+                </div>
+                <div class="tech-stack">
+                  <h4 class="tech-header">Figma</h4>
+                  <i class="fab fa-figma" title="Figma"></i>
+                </div>
+              </div>
               <!-- Provide a link to your resume -->
               <a href="https://docs.google.com/document/d/1_FNpa2mN0MmGzm8PDflmNFO5lIL8l8ABn0BMSjCCo6Q/edit?tab=t.0" class="btn">My Resume</a>
             </div>
     
             <div class="about__photo-container">
               <!-- Add a nice photo of yourself -->
-              <img class="about__photo" src="./images/stan.jpg" alt="" />
+              <iframe 
+              class="about__photo" 
+              style="width: 100%; height: 100%;"
+              src="https://www.youtube.com/embed/vOibe4fuATU?si=Vg93SYGRw3XYw1E4" 
+              title="YouTube video pitch"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen 
+              ></iframe>
             </div>
           </div>
         </div>
       </section>
-    </main>
+    
     
       <section class="contact" id="contact">
         <div class="row">
@@ -87,7 +126,7 @@
               me is via an email.
             </p>
             <!-- Replace the email with yours -->
-            <a href="mailto:Sohazulike@gmail.com.com" class="btn">sohazulike@gmail.com</a>
+            <a href="mailto:Sohazulike@gmail.com" class="btn">sohazulike@gmail.com</a>
           </div>
         </div>
       </section>
